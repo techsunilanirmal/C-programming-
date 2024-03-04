@@ -1,0 +1,16 @@
+//Data types and variables.
+
+#include<stdio.h>
+
+int main()
+{
+    int a=10;
+    char b='S';
+    float c=3.14;
+    
+    printf("%d\n",a);
+    printf("%c\n",b);
+    printf("%f\n",c);
+    
+    return 0;
+}
