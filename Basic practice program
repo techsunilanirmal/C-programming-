@@ -1,0 +1,60 @@
+//Addition of two numbers:
+
+#include<stdio.h>
+
+int main()
+{
+    int num1,num2,sum;
+    
+    printf("Enter two numbers:");
+    scanf("%d%d",&num1,&num2);
+    
+    sum=num1+num2;
+    printf("Addition is:%d\n",sum);
+    
+    return 0;
+}
+
+
+//Average of three numbers:
+
+#include<stdio.h>
+
+int main()
+{
+    int a,b,c,sum,avg;
+    
+    printf("Enter two numbers:");
+    scanf("%d%d%d",&a,&b,&c);
+    
+    sum=a+b+c;
+    printf("Addition is:%d\n",sum);
+    
+    avg=sum/3;
+    printf("Average is:%d\n",avg);
+    
+    return 0;
+}
+
+
+//Area of circle:
+
+#include<stdio.h>
+
+int main()
+{
+    int area,rad;
+    const float pi=3.14;
+    
+    printf("Enter a radius:");
+    scanf("%d",&rad);
+    
+    area=pi*rad*rad;
+    printf("Area of circle is:%d\n",area);
+    
+    return 0;
+}
+
+// Q1. Write a program to find area of triangle.
+// Q2. Write a program to calculate Simple interest.
+// Q3. Input marks of five subject and find average.
