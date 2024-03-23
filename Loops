@@ -1,0 +1,96 @@
+// while loop:-
+#include<stdio.h>
+
+int main()
+{
+    int i=1;
+    
+    while(i<=20)
+    {
+        printf("%d\n",i);
+        i++;
+    }
+    
+    return 0;
+}
+
+//do-while loop:-
+
+#include<stdio.h>
+
+int main()
+{
+    int i=1;
+    
+    do
+    {
+        printf("%d\n",i);
+        i++;
+    }
+    
+    while(i<=20);
+    
+    return 0;
+}
+
+//for loop:-
+
+#include<stdio.h>
+
+int main()
+{
+    int i;
+    
+    for(i=1;i<=20;i++)
+    {
+        printf("%d\n",i);
+    }
+    
+    return 0;
+}
+
+// Table program 1:-
+
+#include<stdio.h>
+
+int main()
+{
+    int i,j;
+    
+    for(i=1;i<=10;i++)
+   {
+       for(j=1;j<=10;j++)
+       {
+           printf("%d\t",i*j);
+       }
+       
+       printf("\n");
+   }
+    
+    return 0;
+}
+
+//Table program 2:-
+
+#include<stdio.h>
+
+int main()
+{
+    int i,j;
+    
+    for(i=1;i<=10;i++)
+   {
+       for(j=1;j<=10;j++)
+       {
+           printf("%d*%d=%d\n",i,j,i*j);
+       }
+       
+       printf("\n");
+   }
+    
+    return 0;
+}
+
+// Q1. Write a C program to print even numbers between 1 to 50 using while loop.
+// Q1. Write a C program to print odd numbers between 50 to 100 using do while loop.
+// Q1. Write a C program to print even and odd numbers between 20 to 100 using for loop.
