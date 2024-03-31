@@ -1,0 +1,100 @@
+//Program to check character is Vowel OR Consonent:-
+
+#include<stdio.h>
+
+int main()
+{
+    char c;
+    printf("Enter a character:");
+    scanf("%c",&c);
+    
+    if(c=='a'||c=='e'||c=='i'||c=='o'||c=='u'||c=='A'||c=='E'||c=='I'||c=='O'||c=='U')
+    {
+        printf("Character is Vowel");
+    }
+    else
+    {
+        printf("Character is Consonent");
+    }
+    
+    return 0;
+}
+
+//Login Program:-
+
+#include<stdio.h>
+#include<string.h>
+
+int main()
+{
+    char name[300]="SunilaNirmal",pass[100]="992003",name1[300],pass1[100];
+    
+    printf("Enter username:\n");
+    scanf("%s",&name1);
+    
+    printf("Enter password:\n");
+    scanf("%s",&pass1);
+    
+    if(strcmp(name,name1)==0 && strcmp(pass,pass1)==0)
+    {
+        printf("Login Successful");
+    }
+    else
+    {
+        printf("Warning!!!Wrong password");
+    }
+    return 0;
+}
+
+
+//Calculate Profit and Loss:-
+
+#include<stdio.h>
+
+int main()
+{
+    int selling_price,cost_price,profit,loss;
+    
+    printf("Enter cost price:");
+    scanf("%d",&cost_price);
+    
+    printf("Enter selling price:");
+    scanf("%d",&selling_price);
+    
+    if(selling_price > cost_price)
+    {
+        profit=selling_price-cost_price;
+        printf("Profit is %d Rs.",profit);
+    }
+    else
+    {
+        loss=cost_price - selling_price;
+        printf("Loss is %d Rs.",loss);
+    }
+    return 0;
+}
+
+// Check triangle is valid Or not:-
+
+#include<stdio.h>
+
+int main()
+{
+    int a,b,c,angle;
+    
+    printf("Enter the value of a,b and c:");
+    scanf("%d%d%d",&a,&b,&c);
+    
+    angle=a+b+c;
+    printf("Addition of angle is:%d\n",angle);
+    
+    if(angle==180)
+    {
+        printf("Triangle is valid");
+    }
+    else
+    {
+        printf("Triangle is not valid");
+    }
+    return 0;
+}
