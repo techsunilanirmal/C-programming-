@@ -1,0 +1,87 @@
+// Result according to percentage:-
+
+#include<stdio.h>
+
+int main()
+{
+    int per;
+    
+    printf("Enter your percentage:");
+    scanf("%d",&per);
+    
+    if(per<=100 && per>=60)
+    {
+        printf("A grade");
+    }
+    if(per<60 && per>=45)
+    {
+        printf("B grade");
+    }
+    if(per<45 && per>=33)
+    {
+        printf("C grade");
+    }
+    if(per<33)
+    {
+        printf("Fail");
+    }
+    return 0;
+}
+
+
+
+//Program to check number is Positive , Negative OR Zero:-
+
+#include<stdio.h>
+
+int main()
+{
+    int num;
+    
+    printf("Enter a number:");
+    scanf("%d",&num);
+    
+    if(num>0)
+    {
+        printf("Number is Positive!!!");
+    }
+    if(num<0)
+    {
+        printf("Number is Negative!!!");
+    }
+    if(num==0)
+    {
+        printf("Number is Zero!!!");
+    }
+    
+    return 0;
+}
+
+//Program to check greater value in 2 numbers:-
+
+#include<stdio.h>
+
+int main()
+{
+    int num1,num2;
+    
+    printf("Enter two number:");
+    scanf("%d%d",&num1,&num2);
+    
+    if(num1>num2)
+    {
+        printf("Num1 is greater!!!");
+    }
+    if(num1<num2)
+    {
+        printf("Num2 is greater!!!");
+    }
+    if(num1==num2)
+    {
+        printf("Both are equals!!!");
+    }
+    
+    return 0;
+}
+
+
