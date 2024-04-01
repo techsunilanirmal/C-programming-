@@ -1,0 +1,70 @@
+// Program 1:-
+#include<stdio.h>
+
+int main()
+{
+    int ch;
+    
+    printf("Enter your choice:");
+    scanf("%d",&ch);
+    
+    switch(ch)
+    {
+        case 1: printf("Today is Monday!!!");
+        break;
+        
+        case 2: printf("Today is Tuesday!!!");
+        break;
+        
+        case 3: printf("Today is Wednesday!!");
+        break;
+        
+        case 4: printf("Today is Thurusday!!!");
+        break;
+        
+        case 5: printf("Today is Friday!!!");
+        break;
+        
+        case 6: printf("Today is Saturday!!!");
+        break;
+        
+        case 7: printf("Today is Sunday!!!");
+        break;
+        
+        default: printf("Invalid days!!!");
+        break;
+        
+    }
+    return 0;
+}
+
+//Program 2:-
+
+#include<stdio.h>
+
+int main()
+{
+    int choice;
+    printf("Who is the inventor of 'C' language??\n");
+    printf("1.Bjarne Stroustrup\n2.Guido van Rossum\n3.Dennis Ritchie\n4.Tim Berners-Lee\n");
+    
+    printf("Select your answer:");
+    scanf("%d",&choice);
+    
+    switch(choice)
+    {
+        case 1:printf("Wrong!!!\n Bjarne Stroustrup is a invetor of CPP language");
+        break;
+        case 2:printf("Wrong!!!\nGuido van Rossum is a inventor of Python language");
+        break;
+        case 3:printf("Correct answer!!!");
+        break;
+        case 4:printf("Wrong!!!\nTim Berners-Lee is a inventor of HTML language");
+        break;
+        
+        default:printf("Out of option!!!");
+        break;
+    }
+    return 0;
+    
+}
