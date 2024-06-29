@@ -1,0 +1,65 @@
+// Printing a 2D Array.
+
+#include <stdio.h>
+
+int main() 
+
+{
+    int arr[3][4] = 
+    {
+        {10,20,30,40},
+        {50,60,70,80},
+        {90,100,110,120}
+    };
+
+    for (int i = 0; i < 3; i++) 
+    
+    {
+        for (int j = 0; j < 4; j++) 
+        {
+            printf("%d ", arr[i][j]);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+
+
+//Sum of Rows and Columns
+
+#include <stdio.h>
+
+int main() 
+{
+    int arr[3][4] = 
+    {
+        {1,2,3,4},
+        {5,6,7,8},
+        {9,10,11,12}
+    };
+
+    for (int i = 0; i < 3; i++) 
+    {
+        int row_sum = 0;
+        for (int j = 0; j < 4; j++) 
+        {
+            row_sum += arr[i][j];
+        }
+        printf("Sum of row %d: %d\n", i, row_sum);
+    }
+
+    for (int j = 0; j < 4; j++) 
+    {
+        int col_sum = 0;
+        for (int i = 0; i < 3; i++)
+        {
+            col_sum += arr[i][j];
+        }
+        printf("Sum of column %d: %d\n", j, col_sum);
+    }
+
+    return 0;
+}
+
+
