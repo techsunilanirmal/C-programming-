@@ -1,0 +1,50 @@
+//User input in structure:-
+
+#include<stdio.h>
+
+struct sun
+{
+    int a,b,c;
+};
+int main()
+{
+    struct sun obj;
+    
+    printf("Enter first number:");
+    scanf("%d",&obj.a);
+    
+    printf("Enter second number:");
+    scanf("%d",&obj.b);
+    
+    obj.c=obj.a+obj.b;
+    printf("Addition is:%d",obj.c);
+    
+    return 0;
+}
+
+
+//Input name , rollno and marks of student and print using structure:-
+
+#include<stdio.h>
+#include<string.h>
+
+struct student
+{
+    int rollno;
+    char name[200];
+    float marks;
+};
+int main()
+{
+    struct student obj;
+    
+    strcpy(obj.name,"Sunila Nirmal");
+    obj.rollno=1;
+    obj.marks=83.54;
+    
+    printf("Name:%s\n",obj.name);
+    printf("Roll no:%d\n",obj.rollno);
+    printf("Marks:%f\n",obj.marks);
+    
+    return 0;
+}
