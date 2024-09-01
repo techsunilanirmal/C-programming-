@@ -1,0 +1,79 @@
+//Array to structure program:
+
+#include<stdio.h>
+
+struct Student 
+{
+    int RollNo;
+    char Name[50];
+    float Marks;
+};
+int main() 
+{
+    struct Student students[3];
+    
+    for(int i=0; i<3; i++) 
+    {
+        printf("Enter roll number:");
+        scanf("%d",&students[i].RollNo);
+        printf("Enter name:");
+        scanf("%s",&students[i].Name);
+        printf("Enter marks:");
+        scanf("%f",&students[i].Marks);
+    }
+    for(int i=0; i<3; i++) 
+    {
+        printf("Roll Number: %d\n",students[i].RollNo);
+        printf("Name: %s\n",students[i].Name);
+        printf("Marks: %.2f\n\n",students[i].Marks);
+    }
+
+    return 0;
+}
+
+
+//User input in structure:-
+
+#include<stdio.h>
+
+struct add
+{
+    int num1,num2,sum;
+};
+int main()
+{
+    struct add obj;
+    
+    printf("Enter first number:");
+    scanf("%d",&obj.num1);
+    printf("Enter second number:");
+    scanf("%d",&obj.num2);
+    
+    obj.sum=obj.num1+obj.num2;
+    printf("Addition is:%d",obj.sum);
+    
+    return 0;
+}
+
+
+//Addition program using structure:
+
+
+#include<stdio.h>
+
+struct add
+{
+    int a,b,c;
+};
+int main()
+{
+    struct add A;
+    
+    A.a=10;
+    A.b=15;
+    
+    A.c=A.a+A.b;
+    printf("Addition is:%d",A.c);
+    
+    return 0;
+}
